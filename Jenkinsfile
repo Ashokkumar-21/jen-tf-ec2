@@ -36,13 +36,5 @@ pipeline {
                 }
             }
         }
-
-    stage('Terraform Destory') {
-            steps {
-                script {
-                    sh 'terraform destory -auto-approve'
-                }
-            }
-        }
     }
 }
